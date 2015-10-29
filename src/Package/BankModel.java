@@ -125,6 +125,8 @@ public class BankModel extends AbstractTableModel {
 		for (Account a : acts) {
 			System.out.println(a.toString());
 		}
+		
+		fireTableDataChanged();
 	}
 
 	/*******************************************************************
@@ -183,6 +185,8 @@ public class BankModel extends AbstractTableModel {
 			acts = tempData;
 			throw e;
 		}
+		
+		fireTableDataChanged();
 	}
 
 

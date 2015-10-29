@@ -8,13 +8,14 @@ import java.util.*;
      private static final long serialVersionUID = 1L;
      private int number;
      private String owner;
-     private GregorianCalendar dateOpened;
+     private String dateOpened;
      private double balance;
      
      public Account (int number, String dateOpened, String accountOwner, double balance){
          this.number = number;
          this.owner = accountOwner;
          this.balance = balance;
+         this.dateOpened = dateOpened;
      
      
  }
@@ -38,7 +39,7 @@ import java.util.*;
          return number;
      }
     
-     public GregorianCalendar getDate(){
+     public String getDate(){
          
          return dateOpened;
      }
